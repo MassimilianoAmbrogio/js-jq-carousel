@@ -4,9 +4,10 @@
 
 // Parte JS e jQuery
 
-// Frecce per scorrere le img con click mouse
+// Frecce per scorrere le img 
 $(document).ready(function () {
     
+    // Click mouse
     $('.next').click(function () {
         nextPrevImage('next');
     });
@@ -18,12 +19,12 @@ $(document).ready(function () {
     // Navigation with keyboard
     $(document).keydown(function(event) {
         
-        console.log(event.keyCode);
+        // console.log(event.keyCode);
 
-        if (event.KeyCode == 37) {
+        if (event.keyCode == 37) {
             // Sx
             nextPrevImage('prev');
-         } else if (event.KeyCode == 39) {
+         } else if (event.keyCode == 39) {
             // Dx
             nextPrevImage('next');
          }
