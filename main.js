@@ -18,7 +18,7 @@ $(document).ready(function () {
     // Navigation with keyboard
     $(document).keydown(function(event) {
         
-         console.log(event.keyCode);
+        console.log(event.keyCode);
 
         if (event.KeyCode == 37) {
             // Sx
