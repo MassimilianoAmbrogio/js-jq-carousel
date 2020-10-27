@@ -33,7 +33,6 @@ $(document).ready(function () {
    
 }); // <-- End doc ready
 
-
 // Naviga avanti o indietro nelle slide
 function nextPrevImage(direction) {
     var activeImage = $('.images img.active');
