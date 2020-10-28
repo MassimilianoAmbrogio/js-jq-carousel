@@ -30,8 +30,34 @@ $(document).ready(function () {
          }
         
     });
+
+    // Navigation with dots 
+    $('.nav i').click(function () {
+
+        var activeImage = $('.images img.active');
+        var activeCircle = $('.nav i.active');
+
+        // Reset
+        activeImage.removeClass('active');
+        activeCircle.removeClass('active');
+
+        var circle = $(this);
+
+        var index = circle.index();
+        console.log(index);
+
+        circle.addClass('active');
+
+        // Set img by index
+        $('.images img').eq(index).addClass('active');
+        
+    });
    
 }); // <-- End doc ready
+
+/**
+ * Functions
+ */
 
 // Naviga avanti o indietro nelle slide
 function nextPrevImage(direction) {
