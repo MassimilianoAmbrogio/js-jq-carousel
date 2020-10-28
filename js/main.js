@@ -28,16 +28,16 @@ $(document).ready(function () {
             // Dx
             nextPrevImage('next');
          }
-        
     });
 
     // Navigation with dots 
     $('.nav i').click(function () {
 
+        // console.log(direction);
         var activeImage = $('.images img.active');
         var activeCircle = $('.nav i.active');
 
-        // Reset
+        // Reset actual active
         activeImage.removeClass('active');
         activeCircle.removeClass('active');
 
@@ -50,21 +50,22 @@ $(document).ready(function () {
 
         // Set img by index
         $('.images img').eq(index).addClass('active');
-        
     });
    
 }); // <-- End doc ready
 
-/**
+/************************
  * Functions
- */
+ ***********************/
 
 // Naviga avanti o indietro nelle slide
 function nextPrevImage(direction) {
+    
+    // console.log(direction);
     var activeImage = $('.images img.active');
     var activeCircle = $('.nav i.active');
 
-    // Reset
+    // Reset actual active
     activeImage.removeClass('active');
     activeCircle.removeClass('active');
 
